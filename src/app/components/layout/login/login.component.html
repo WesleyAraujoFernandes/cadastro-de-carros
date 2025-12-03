@@ -1,0 +1,25 @@
+<div class="login-wrapper">
+  <div class="card">
+    <div class="card-body">
+      <h3 class="centralizar mb-4">Autentique-se</h3>
+      <mdb-form-control>
+        <input mdbInput type="text" id="usuario" class="form-control" [(ngModel)]="usuario" />
+        <label mdbLabel class="form-label" for="usuario">Usuário</label>
+      </mdb-form-control>
+
+      <br />
+
+      <mdb-form-control>
+        <input mdbInput type="password" id="senha" class="form-control" [(ngModel)]="senha" />
+        <label mdbLabel class="form-label" for="senha">Senha</label>
+      </mdb-form-control>
+
+      <br />
+      <div class="text-center">
+        <button type="button" class="btn btn-primary btn-rounded" mdbRipple (click)="logar()">
+          Acessar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
