@@ -14,13 +14,13 @@
               Novo
             </button>
           </div>
-          <br/>
+          <br />
           <table border="1" class="table table-striped">
             <thead>
               <tr>
                 <th>ID</th>
                 <th>Nome</th>
-                <th>Ações</th>
+                <th class="acoes-col">Ações</th>
               </tr>
             </thead>
             <tbody>
@@ -28,20 +28,21 @@
               <tr>
                 <td>{{ carro.id }}</td>
                 <td>{{ carro.nome }}</td>
-                <td class="direita">
+                <td class="acoes-col">
                   <button
                     type="button"
-                    class="btn btn-primary btn-rounded"
+                    class="btn btn-primary btn-rounded me-2"
                     mdbRipple
                     routerLink="/admin/carros/edit/{{ carro.id }}"
                   >
                     Editar
                   </button>
+
                   <button
                     type="button"
                     class="btn btn-danger btn-rounded"
                     mdbRipple
-                    (click)="excluir()"
+                    (click)="deleteById(carro)"
                   >
                     Excluir
                   </button>

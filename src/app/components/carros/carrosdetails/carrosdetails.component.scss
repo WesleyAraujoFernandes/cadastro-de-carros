@@ -1,0 +1,11 @@
+.center-screen {
+  height: 100vh;            // ocupa a tela toda
+  display: flex;
+  justify-content: center;  // centraliza horizontalmente
+  align-items: center;      // centraliza verticalmente
+}
+
+.card {
+  width: 200%;
+  max-width: 400px;
+}
